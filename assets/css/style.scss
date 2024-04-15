@@ -127,6 +127,13 @@ a {
                     }
                 }
             }
+
+            .tab-menu {
+                display: none;
+                font-size: 20px;
+                color:rgb(0, 131, 62);
+                align-items: center;
+            }
         }
 
     }
@@ -257,9 +264,32 @@ a {
     100% { transform: translateX(0); }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     #slider {
         height: 300px;
+    }
+
+    #header {
+        .home-list {
+            display: none;
+        }
+        .navbar {
+            .nav-container {
+                .menu {
+                    display: none;
+                }
+
+                .contact {
+                    .language {
+                        display: none;
+                    }
+                }
+
+                .tab-menu {
+                    display: flex;
+                }
+            }
+        }
     }
 }
 
