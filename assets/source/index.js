@@ -3,11 +3,27 @@ let items = document.querySelectorAll('#slider .list .item')
 let dots = document.querySelectorAll('#slider .dots li');
 let prev = document.getElementById('prev')
 let next = document.getElementById('next');
+let showMenuIcon = document.querySelector(".tab-menu .show-menu-icon");
+let closeIcon = document.querySelector(".tab-menu .close-icon");
+let showMenuTab = document.querySelector(".tab-menu .show-menu-tab");
+
 
 
 
 let active = 0;
 let lengthItems = items.length - 1;
+
+showMenuIcon.addEventListener('click', () => {
+    showMenuTab.style.display = "flex";
+    closeIcon.style.display = "block";
+    showMenuIcon.style.display = "none";
+})
+
+closeIcon.addEventListener('click', () => {
+    showMenuTab.style.display = "none";
+    closeIcon.style.display = "none";
+    showMenuIcon.style.display = "block";
+})
 
 next.onclick = function() {
     if(active+1 > lengthItems) {

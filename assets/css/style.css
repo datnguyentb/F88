@@ -45,6 +45,12 @@ a {
 #header .home-list .container-box ul li a:hover {
   color: white;
 }
+#header .navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
 #header .navbar .nav-container {
   display: flex;
   justify-content: space-between;
@@ -110,6 +116,20 @@ a {
   font-size: 20px;
   color: #00833e;
   align-items: center;
+}
+#header .navbar .nav-container .tab-menu .close-icon {
+  display: none;
+}
+#header .navbar .nav-container .tab-menu .show-menu-tab {
+  display: none;
+  justify-content: space-between;
+  position: fixed;
+  top: 63px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 5;
 }
 
 #slider {
@@ -211,6 +231,10 @@ a {
   color: #1B80F2;
   list-style: none;
   font-size: 25px;
+}
+
+#content {
+  height: 2000px;
 }
 
 @keyframes shake {
