@@ -323,13 +323,14 @@ a {
   #header .home-list {
     display: none;
   }
-  #header .navbar .nav-container .menu {
+
+  #navbar .nav-container .menu {
     display: none;
   }
-  #header .navbar .nav-container .contact .language {
+  #navbar .nav-container .contact .language {
     display: none;
   }
-  #header .navbar .nav-container .tab-menu {
+  #navbar .nav-container .tab-menu {
     display: flex;
   }
 }

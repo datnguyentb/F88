@@ -373,21 +373,22 @@ a {
         .home-list {
             display: none;
         }
-        .navbar {
-            .nav-container {
-                .menu {
+    }
+
+    #navbar {
+        .nav-container {
+            .menu {
+                display: none;
+            }
+
+            .contact {
+                .language {
                     display: none;
                 }
+            }
 
-                .contact {
-                    .language {
-                        display: none;
-                    }
-                }
-
-                .tab-menu {
-                    display: flex;
-                }
+            .tab-menu {
+                display: flex;
             }
         }
     }
