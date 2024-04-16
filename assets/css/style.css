@@ -45,82 +45,85 @@ a {
 #header .home-list .container-box ul li a:hover {
   color: white;
 }
-#header .navbar {
-  position: fixed;
+
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
   width: 100%;
   background-color: #fff;
   z-index: 999;
 }
-#header .navbar .nav-container {
+#navbar .nav-container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1230px;
   padding: 9px;
 }
-#header .navbar .nav-container .logo img {
+#navbar .nav-container .logo img {
   height: 35px;
 }
-#header .navbar .nav-container .menu {
+#navbar .nav-container .menu {
   display: flex;
   align-items: center;
 }
-#header .navbar .nav-container .menu ul {
+#navbar .nav-container .menu ul {
   display: flex;
 }
-#header .navbar .nav-container .menu ul li {
+#navbar .nav-container .menu ul li {
   font-size: 16px;
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
 }
-#header .navbar .nav-container .contact {
+#navbar .nav-container .contact {
   display: flex;
   align-items: center;
 }
-#header .navbar .nav-container .contact .language {
+#navbar .nav-container .contact .language {
   display: flex;
   background-color: #f3f3f3;
   border-radius: 50px;
   padding: 5px;
 }
-#header .navbar .nav-container .contact .language .flag {
+#navbar .nav-container .contact .language .flag {
   margin: 0 5px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
 }
-#header .navbar .nav-container .contact .language .vietnamese {
+#navbar .nav-container .contact .language .vietnamese {
   background-color: red;
 }
-#header .navbar .nav-container .contact .language .english {
+#navbar .nav-container .contact .language .english {
   background-color: green;
 }
-#header .navbar .nav-container .contact .phone-number {
+#navbar .nav-container .contact .phone-number {
   border: solid 2px #00833e;
   border-radius: 50px;
   padding: 10px;
   cursor: pointer;
 }
-#header .navbar .nav-container .contact .phone-number i {
+#navbar .nav-container .contact .phone-number i {
   animation: shake 0.5s ease infinite;
 }
-#header .navbar .nav-container .contact .phone-number a {
+#navbar .nav-container .contact .phone-number a {
   color: #00833e;
   font-weight: bolder;
   letter-spacing: 1px;
 }
-#header .navbar .nav-container .tab-menu {
+#navbar .nav-container .tab-menu {
   display: none;
   font-size: 20px;
   color: #00833e;
   align-items: center;
 }
-#header .navbar .nav-container .tab-menu .close-icon {
+#navbar .nav-container .tab-menu .close-icon {
   display: none;
 }
-#header .navbar .nav-container .tab-menu .show-menu-tab {
+#navbar .nav-container .tab-menu .show-menu-tab {
   display: none;
   justify-content: space-between;
   position: fixed;
@@ -235,6 +238,64 @@ a {
 
 #content {
   height: 2000px;
+}
+#content .hot-service .container .top-box {
+  background: #f6f6f6;
+}
+#content .hot-service .container .top-box .content-box {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+#content .hot-service .container .top-box .content-box .heading {
+  padding: 63px 0;
+  text-align: center;
+}
+#content .hot-service .container .top-box .content-box .heading h1 {
+  color: #00833e;
+  font-size: 30px;
+  font-style: inherit;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 11px;
+}
+#content .hot-service .container .top-box .content-box .heading p {
+  color: #848484;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 600;
+  line-height: 24px;
+}
+#content .hot-service .container .top-box .content-box .muti-option ul {
+  display: flex;
+  justify-content: space-between;
+}
+#content .hot-service .container .top-box .content-box .muti-option ul li {
+  flex: 1;
+  text-align: center;
+  color: #00844a;
+  border: 1px #ccc solid;
+  padding: 33.5px 11px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+#content .hot-service .container .top-box .content-box .muti-option ul li i {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#content .hot-service .container .top-box .content-box .muti-option ul li span {
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 700;
+  line-height: 20px;
+}
+#content .hot-service .container .top-box .content-box .muti-option ul .option-2 {
+  border-left: none;
+  border-right: none;
+}
+#content .hot-service .container .top-box .content-box .muti-option ul .active {
+  border-top: 5px #00844a solid;
+  border-bottom: none;
 }
 
 @keyframes shake {
