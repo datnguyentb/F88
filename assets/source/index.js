@@ -8,8 +8,6 @@ let closeIcon = document.querySelector(".tab-menu .close-icon");
 let showMenuTab = document.querySelector(".tab-menu .show-menu-tab");
 
 
-
-
 let active = 0;
 let lengthItems = items.length - 1;
 
