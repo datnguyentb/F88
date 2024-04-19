@@ -474,10 +474,52 @@ a {
         padding: 50px 0;
         background-color: rgb(246, 246, 246);
         .container {
+            max-width: $width-1;
+            margin: 0 auto;
+            padding: 0 15px;
+            .hot-news {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 34px;
+                h1 {
+                    color: rgb(0, 131, 62);
+                    font-size: 24px;
+                    font-weight: 800;
+                    line-height: 32px;
+                }
+
+                button {
+                    color: rgb(0, 132, 74);
+                    border: 1px solid rgb(0, 131, 62);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 4px;
+                }
+
+                button:hover {
+                    background-color: rgb(0, 132, 74);
+                    color: #fff;
+                }
+            }
+
+            .btn-bottom {
+                display: none;
+                justify-content: center;
+                button {
+                    border: 1px solid rgb(0, 131, 62);
+                    background: rgb(230, 243, 236);
+                    color: rgb(0, 132, 74);
+                    padding: 8px 16px;
+                    font-size: 16px;
+                    border-radius: 6px;
+                    font-weight: 600;
+                }
+            }
             .content-box {
-                max-width: $width-1;
-                margin: 0 auto;
-                padding: 0 15px;
+                width: 100%;
                 display: flex;
                 justify-content: space-between;
                 
@@ -487,12 +529,16 @@ a {
                     border-radius: 6px;
                     a {
                         .img {
+                            position: relative;
                             width: 100%;
                             height: 400px;
                             overflow: hidden;
                             border-top-left-radius: 6px;
                             border-top-right-radius: 6px;
                             img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
                                 width: 100%;
                                 height: auto;
                             }
@@ -571,7 +617,7 @@ a {
                             }
 
                             p {
-                                color: rgb(65, 65, 65);
+                                color: rgb(65, 65, 65) !important;
                                 font-size: 16px;
                                 font-style: inherit;
                                 font-weight: 500;
@@ -609,8 +655,9 @@ a {
     padding-top: 90px;
     border-top: 1px solid rgb(185, 185, 185);
     .container {
-        max-width: $width;
+        max-width: $width-1;
         margin: 0 auto;
+        padding: 0 15px;
         .top-box {
             display: flex;
             .box {
@@ -751,12 +798,132 @@ a {
                 }
             }
         }
+
+        .content-3 {
+            padding: 32px 0;
+            .container {
+                .hot-news {
+                    margin-bottom: 26px !important;
+                    button {
+                        display: none;
+                    }
+                }
+
+                .btn-bottom {
+                    display: flex;
+                }
+
+                .content-box {
+                    
+
+                    .left-box {
+                        a {
+                            .news-content {
+                                padding: 21px 19px 24px !important;
+
+                                p {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .right-box {
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+
+    #footer {
+        .container {
+            .top-box {
+                flex-direction: column;
+                ul {
+                    display: none;
+                }
+
+                .box-4 {
+                    .logo-1 {
+                        justify-content: left;
+                        .img-1 {
+                            width: 40% !important;
+                        }
+    
+                        .img-2 {
+                            width: 30% !important;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     #slider {
         height: 250px;
+    }
+
+    #content {
+        .content-2 {
+            .container {
+                .top-box {
+    
+                }
+    
+                .bottom-box {
+                    ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(0px, 1fr)); /* Xác định lưới với 2 cột có độ rộng tối thiểu là 0px và tối đa là 1fr */
+                        gap: 10px;
+                        li {
+                            margin: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-3 {
+            .container {
+                .content-box {
+                    flex-direction: column;
+
+                    .left-box {
+                        margin-bottom: 20px;
+                        a {
+                            .news-content {
+                                padding: 21px 19px 24px !important;
+                            }
+                        }
+                    }
+
+                    .right-box {
+                        max-width: 100%;
+                        a {
+                            .box {
+                                max-width: 100%;
+                                .img {
+                                    position: relative;
+                                    img {
+                                        position: absolute;
+                                        width: auto;
+                                        height: 100%;
+                                        top: 0;
+                                        left: -50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -779,6 +946,32 @@ a {
                             margin-bottom: 21px;
                         }
                     }
+                }
+            }
+        }
+
+        .content-2 {
+            .container {
+                .top-box {
+    
+                }
+    
+                .bottom-box {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .content-3 {
+            .left-box {
+                .img {
+                    height: 310px !important;
                 }
             }
         }
