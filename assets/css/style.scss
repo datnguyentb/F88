@@ -389,18 +389,20 @@ a {
                             }
                         }
 
-                        button {
-                            padding: 8px 32px;
-                            background: rgb(0, 131, 62);
-                            color: rgb(255, 255, 255);
-                            border: none;
-                            min-width: 125px;
-                            height: 48px;
-                            font-size: 16px;
-                            font-weight: 600;
-                            border-radius: 6px;
+                        .btn {
                             margin-top: 32px;
-                            cursor: pointer;
+                            button {
+                                padding: 8px 32px;
+                                background: rgb(0, 131, 62);
+                                color: rgb(255, 255, 255);
+                                border: none;
+                                min-width: 125px;
+                                height: 48px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                border-radius: 6px;
+                                cursor: pointer;
+                            }
                         }
                     }
                     .right-box {
@@ -663,6 +665,15 @@ a {
             .box {
                 flex: 1;
 
+                .show-more {
+                   display: flex;
+                   justify-content: space-between; 
+                   .up-icon, .down-icon {
+                    margin-left: 10px;
+                    display: none;
+                    }
+                }
+
                 h1 {
                     font-size: 18px;
                     font-style: inherit;
@@ -790,6 +801,15 @@ a {
 
                     .left-box {
                         order: 2;
+                        .btn {
+                            margin: 20px auto 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            width: 45%;
+                            button {
+                                width: 100%;
+                            }
+                        }
                     }
 
                     .right-box {
@@ -802,16 +822,6 @@ a {
         .content-3 {
             padding: 32px 0;
             .container {
-                .hot-news {
-                    margin-bottom: 26px !important;
-                    button {
-                        display: none;
-                    }
-                }
-
-                .btn-bottom {
-                    display: flex;
-                }
 
                 .content-box {
                     
@@ -839,11 +849,42 @@ a {
     }
 
     #footer {
+        padding-top: 20px;
         .container {
             .top-box {
                 flex-direction: column;
+                .show {
+                    display: flex !important;
+                }
+                .show-more {
+                    // margin-bottom: 10px;
+                    cursor: pointer;
+                }
+
+                .box {
+                    margin-bottom: 18px;
+                    ul {
+                        li {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                h1 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    margin: 0;
+                }
                 ul {
                     display: none;
+                    flex-direction: column;
+                    border-left: 0.5px solid rgb(204, 204, 204);
+                    padding: 0 18px;
+                }
+
+                .show-icon {
+                    display: inline-block !important;
                 }
 
                 .box-4 {
@@ -858,6 +899,12 @@ a {
                             margin-left: 20px;
                         }
                     }
+                }
+            }
+            .bottom-box {
+                .address {
+                    border: none;
+                    margin-left: 0;
                 }
             }
         }
@@ -891,6 +938,16 @@ a {
 
         .content-3 {
             .container {
+                .hot-news {
+                    margin-bottom: 26px !important;
+                    button {
+                        display: none;
+                    }
+                }
+
+                .btn-bottom {
+                    display: flex;
+                }
                 .content-box {
                     flex-direction: column;
 
