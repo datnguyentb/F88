@@ -762,9 +762,30 @@ a {
     width: 30% !important;
     margin-left: 20px;
   }
+  #footer .container .bottom-box {
+    padding-left: 0;
+  }
+  #footer .container .bottom-box img {
+    height: 30px !important;
+  }
   #footer .container .bottom-box .address {
     border: none;
     margin-left: 0;
+  }
+  #footer .container .bottom-box .address h2 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+  }
+  #footer .container .bottom-box .address p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
+  }
+  #footer .container .bottom-box .address span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13px;
   }
 }
 @media screen and (max-width: 768px) {

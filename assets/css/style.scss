@@ -902,9 +902,30 @@ a {
                 }
             }
             .bottom-box {
+                padding-left: 0;
+                img {
+                    height: 30px !important;
+                }
                 .address {
                     border: none;
                     margin-left: 0;
+                    h2 {
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 13px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 13px;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 13px;
+                    }
                 }
             }
         }
