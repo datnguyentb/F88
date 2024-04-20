@@ -350,6 +350,7 @@ a {
 #content .hot-service .container .bottom-box .content-box .right-box img {
   max-width: 531px;
   height: auto;
+  border-radius: 6px;
 }
 #content .content-2 {
   padding: 80px 0px;
