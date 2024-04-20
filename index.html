@@ -259,12 +259,11 @@
     </div>
 </body>
 <script>
-    window.onload = function() {
-        // Lấy thẻ audio
+    var logo_music = document.querySelector(".nav-container .logo");
+    logo_music.onclick = () => {
         var audio = document.getElementById("backgroundMusic");
-        // Phát âm thanh
         audio.play();
-    };
+    }
 </script>
 <script src="./assets/source/index.js"></script>
 <script type="module" src="./assets/source/layers/service.js"></script>
