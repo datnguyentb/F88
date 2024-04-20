@@ -1,7 +1,7 @@
 import { news } from "../data/database.js"
 
 let content_3_left_box_content_element = document.querySelector(".content-3 .left-box a");
-let content_3_right_ontent_element = document.querySelector(".content-3 .right-box a")
+let content_3_right_ontent_element = document.querySelector(".content-3 .right-box .items")
 
 let html = "";
 news.forEach((current, index) => {
@@ -18,7 +18,7 @@ news.forEach((current, index) => {
         </div>`
     } else {
         html += 
-        `<div class="box">
+        `<a href="" class="box">
             <div class="news-content">
                 <h3>${current.title}</h3>
                 <span>${current.date}</span>
@@ -27,7 +27,7 @@ news.forEach((current, index) => {
             <div class="img">
                 <img src="${current.img}" alt="">
             </div>
-        </div>`
+        </a>`
     }
 })
 
