@@ -10,6 +10,12 @@
 </head>
 <body>
     <div id="main">
+        <div class="background-music">
+            <audio id="backgroundMusic" autoplay loop>
+                <source src="./assets/audio/Background.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         <div id="header">
             <div class="home-list">
                 <div class="container-box">
@@ -252,6 +258,14 @@
         </div>
     </div>
 </body>
+<script>
+    window.onload = function() {
+        // Lấy thẻ audio
+        var audio = document.getElementById("backgroundMusic");
+        // Phát âm thanh
+        audio.play();
+    };
+</script>
 <script src="./assets/source/index.js"></script>
 <script type="module" src="./assets/source/layers/service.js"></script>
 <script type="module" src="./assets/source/layers/news.js"></script>
